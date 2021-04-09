@@ -133,6 +133,67 @@
         </section>
       </div>
       <hr />
+      <h3>Enter a new journal entry:</h3>
+      <form>
+        <fieldset>
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" /><br /><br />
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname" /><br />
+          <br />
+          <p>Things you did today:</p>
+          <input
+            type="checkbox"
+            id="Eat Food"
+            name="Eat Food"
+            value="Eat Food"
+          />
+          <label for="Eat Food"> Eat Food</label><br />
+          <input
+            type="checkbox"
+            id="Drink Water"
+            name="Drink Water"
+            value="Drink Water"
+          />
+          <label for="Drink Water"> Drink Water</label><br />
+          <input type="checkbox" id="Sleep" name="Sleep" value="Sleep" />
+          <label for="Sleep"> Sleep</label><br />
+          <p>What date?</p>
+          <form>
+            <label for="day">Date:</label>
+            <input type="date" id="day" name="day" />
+          </form>
+          <p>Which day?</p>
+          <input type="radio" id="day1" name="day1" value="Day1" />
+          <label for="day1"> Day 1</label><br />
+          <input type="radio" id="day2" name="day2" value="Day2" />
+          <label for="day2"> Day 2</label><br />
+          <input type="radio" id="day3" name="day3" value="Day3" />
+          <label for="day3"> Day 3</label><br /><br />
+          <textarea id="activities" name="activities" rows="3" cols="50">
+            Enter stuff you did today here.
+            </textarea
+          >
+          <p>Favorite snack you ate today:</p>
+          <select name="snacks" id="snacks">
+            <option value="Chips">Chips</option>
+            <option value="Brownies">Brownies</option>
+            <option value="Nuts">Nuts</option>
+            <option value="Cookies">Cookies</option>
+            <option value="IceCream">Ice Cream</option>
+          </select>
+          <p>Favorite beverages you drank today:</p>
+          <input list="drinks" name="drink" id="drink" />
+          <datalist id="drinks">
+            <option value="Water"> </option>
+            <option value="Juice"> </option>
+            <option value="Soda"> </option>
+            <option value="Tea"> </option>
+            <option value="Coffee"> </option></datalist
+          ><br /><br />
+          <button type="button">Submit!</button>
+        </fieldset>
+      </form>
     </main>
     <footer>
       <p>Author: Alvin Wang</p>
