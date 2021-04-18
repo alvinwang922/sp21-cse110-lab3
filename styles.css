@@ -1,0 +1,138 @@
+body {
+  background-color: #bef1c5; /* make background color light green */
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    /* make background color light blue when screen width is 1000 pixels or less */
+    background-color: lightblue;
+  }
+}
+
+h1 {
+  font-family: 'Audiowide';
+  font-size: 60px; /* set header 1 font size to 60px */
+  line-height: 1.5em; /* set header 1 line height to 1.5 times the font size */
+}
+
+h1,
+h2,
+h3 {
+  text-decoration: underline; /* underline all header text */
+}
+
+* {
+  text-align: center; /* align all text in center */
+}
+
+#day1 {
+  background-color: #eed5ed;
+}
+
+.first h3 {
+  display: inline-block;
+  color: rgba(200, 100, 100, 100);
+}
+
+.first p {
+  display: inline;
+}
+
+.second p {
+  display: block;
+}
+
+p {
+  font-size: 0.5cm;
+  line-height: 2vw;
+}
+
+p::first-letter {
+  font-size: 150%;
+  color: #e22b2b;
+}
+
+li {
+  color: rgb(255, 0, 234);
+  font-size: 0.2in;
+  line-height: 2ch;
+}
+
+.first {
+  max-width: 200ch;
+  min-width: 50ch;
+  position: relative;
+}
+
+.first div {
+  /* set border around divs */
+  height: 105vw;
+  width: 90vw;
+  border-style: solid;
+  border-color: green;
+  border-width: 10px;
+  border-radius: 10px;
+  padding: 20px 20px 20px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: static;
+}
+
+a[target='lol'] {
+  background-color: yellow;
+}
+
+a:hover {
+  color: rgb(255, 0, 0);
+}
+
+a:active {
+  color: #00ff40;
+}
+
+.flex-container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.grid-container {
+  display: grid;
+  grid-column-start: col-start 2;
+  grid-template-columns: 65px 65px 65px;
+  grid-template-rows: 65px 65px 65px;
+  background-color: #2196f3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(219, 215, 215, 0.685);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  font-size: 25px;
+  text-align: center;
+}
+
+div li {
+  text-align: left;
+}
+
+ul > li {
+  color: rgb(29, 170, 180);
+}
+
+p ~ ol {
+  background-color: yellow;
+}
+
+ul + p {
+  background-color: rgb(180, 180, 248);
+}
+
+div.flex-container2 {
+  flex-shrink: 2;
+  display: flex;
+  flex-wrap: wrap;
+}
