@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+    />
     <meta charset="UTF-8" />
     <meta name="description" content="Alvin's Adventures" />
     <meta name="author" content="Alvin Wang" />
     <title>Alvin's Journal</title>
+    <link type="text/css" rel="stylesheet" href="styles.css" />
     <link rel="alvin icon" type="image/jpg" href="images/favicon.ico" />
   </head>
   <body>
     <header>
-      <h1>Alvin's Journal</h1>
+      <h1 style="color:red;">Alvin's Journal</h1>
       <h2>
         What has <span class="name" style="color:blue">Alvin</span> done these 3
         consecutive days?
       </h2>
       <nav class="menu">
+        <p>Days:</p>
         <ol>
           <li><a href="#day1">April 4</a></li>
           <li><a href="#day2">April 5</a></li>
@@ -27,8 +33,10 @@
       <div class="first">
         <section id="day1">
           <h3>Day 1 (Saturday, 04/02/21)</h3>
-          <p>On <b>day 1</b>, I did not do too much.</p>
-          <p>Things I did today include:</p>
+          <br />
+          <p style="color:#AAAFFF">On <b>day 1</b>, I did not do too much.</p>
+          <br />
+          <p style="color:hsl(50,50%,50%)">Things I did today include:</p>
           <ul>
             <li>Eat</li>
             <li>Drink</li>
@@ -65,6 +73,7 @@
             <li>ACM External Standup</li>
           </ul>
           <h3>Image of my tree:</h3>
+          <br />
           <img src="images/tree.jpg" alt="Tree Image" />
         </section>
       </div>
@@ -100,7 +109,7 @@
         </section>
       </div>
       <hr />
-      <div class="third">
+      <div class="flex-container2">
         <section id="day3">
           <h3>Day 3 (Monday, 04/04/21)</h3>
           <p>
@@ -112,7 +121,8 @@
             emphasizes <em>artificial intelligence</em> and
             <em>machine learning</em>. Feel free to check learn more about ACM
             AI by visiting the
-            <a href="https://ai.acmucsd.com/">ACM AI website</a>!<br /><br />
+            <a href="https://ai.acmucsd.com/" target="lol">ACM AI website</a
+            >!<br /><br />
             Here is a picture we took when we hung out: <br /><br />
             <img
               src="images/acm_ai.jpg"
@@ -131,62 +141,82 @@
           </video>
           <h2>You just got <i>Rick Rolled</i>!</h2>
         </section>
+        <p>My tictactoe game today:</p>
+        <br />
+        <div class="grid-container">
+          <div class="grid-item">X</div>
+          <div class="grid-item">O</div>
+          <div class="grid-item">X</div>
+          <div class="grid-item">X</div>
+          <div class="grid-item">O</div>
+          <div class="grid-item">O</div>
+          <div class="grid-item">O</div>
+          <div class="grid-item">X</div>
+          <div class="grid-item">X</div>
+        </div>
       </div>
       <hr />
-      <h3>Enter a new journal entry:</h3>
-      <form>
-        <fieldset>
-          <label for="fname">First name:</label>
-          <input type="text" id="fname" name="fname" /><br /><br />
-          <label for="lname">Last name:</label>
-          <input type="text" id="lname" name="lname" /><br />
-          <br />
-          <p>Things you did today:</p>
-          <input type="checkbox" id="EatFood" name="EatFood" value="Eat Food" />
-          <label for="EatFood"> Eat Food</label><br />
-          <input
-            type="checkbox"
-            id="DrinkWater"
-            name="DrinkWater"
-            value="Drink Water"
-          />
-          <label for="DrinkWater"> Drink Water</label><br />
-          <input type="checkbox" id="Sleep" name="Sleep" value="Sleep" />
-          <label for="Sleep"> Sleep</label><br />
-          <p>What date?</p>
-          <label for="day">Date:</label>
-          <input type="date" id="day" name="day" />
-          <p>Which day?</p>
-          <input type="radio" id="first" name="first" value="first" />
-          <label for="first"> Day 1</label><br />
-          <input type="radio" id="second" name="second" value="second" />
-          <label for="second"> Day 2</label><br />
-          <input type="radio" id="third" name="third" value="third" />
-          <label for="third"> Day 3</label><br /><br />
-          <textarea id="activities" name="activities" rows="3" cols="50">
+      <div class="flex-container2">
+        <h3>Enter a new journal entry:</h3>
+        <br />
+        <form>
+          <fieldset>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" /><br /><br />
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" /><br />
+            <br />
+            <p>Things you did today:</p>
+            <input
+              type="checkbox"
+              id="EatFood"
+              name="EatFood"
+              value="Eat Food"
+            />
+            <label for="EatFood"> Eat Food</label><br />
+            <input
+              type="checkbox"
+              id="DrinkWater"
+              name="DrinkWater"
+              value="Drink Water"
+            />
+            <label for="DrinkWater"> Drink Water</label><br />
+            <input type="checkbox" id="Sleep" name="Sleep" value="Sleep" />
+            <label for="Sleep"> Sleep</label><br />
+            <p>What date?</p>
+            <label for="day">Date:</label>
+            <input type="date" id="day" name="day" />
+            <p>Which day?</p>
+            <input type="radio" id="first" name="first" value="first" />
+            <label for="first"> Day 1</label><br />
+            <input type="radio" id="second" name="second" value="second" />
+            <label for="second"> Day 2</label><br />
+            <input type="radio" id="third" name="third" value="third" />
+            <label for="third"> Day 3</label><br /><br />
+            <textarea id="activities" name="activities" rows="3" cols="50">
             Enter stuff you did today here.
-            </textarea
-          >
-          <p>Favorite snack you ate today:</p>
-          <select name="snacks" id="snacks">
-            <option value="Chips">Chips</option>
-            <option value="Brownies">Brownies</option>
-            <option value="Nuts">Nuts</option>
-            <option value="Cookies">Cookies</option>
-            <option value="IceCream">Ice Cream</option>
-          </select>
-          <p>Favorite beverages you drank today:</p>
-          <input list="drinks" name="drink" id="drink" />
-          <datalist id="drinks">
-            <option value="Water"> </option>
-            <option value="Juice"> </option>
-            <option value="Soda"> </option>
-            <option value="Tea"> </option>
-            <option value="Coffee"> </option></datalist
-          ><br /><br />
-          <button type="button">Submit!</button>
-        </fieldset>
-      </form>
+            </textarea>
+            <p>Favorite snack you ate today:</p>
+            <select name="snacks" id="snacks">
+              <option value="Chips">Chips</option>
+              <option value="Brownies">Brownies</option>
+              <option value="Nuts">Nuts</option>
+              <option value="Cookies">Cookies</option>
+              <option value="IceCream">Ice Cream</option>
+            </select>
+            <p>Favorite beverages you drank today:</p>
+            <input list="drinks" name="drink" id="drink" />
+            <datalist id="drinks">
+              <option value="Water"> </option>
+              <option value="Juice"> </option>
+              <option value="Soda"> </option>
+              <option value="Tea"> </option>
+              <option value="Coffee"> </option></datalist
+            ><br /><br />
+            <button type="button">Submit!</button>
+          </fieldset>
+        </form>
+      </div>
     </main>
     <footer>
       <p>Author: Alvin Wang</p>
